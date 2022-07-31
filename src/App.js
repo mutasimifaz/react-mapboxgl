@@ -1,11 +1,10 @@
-import './App.css';
-import MapDirection from './components/MapDirection';
+import "./App.css";
+import MapDirection from "./components/MapDirection";
 
 function App() {
   return (
     <div className="App">
-     
-     <MapDirection></MapDirection>
+      <MapDirection></MapDirection>
     </div>
   );
 }
