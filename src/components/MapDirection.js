@@ -3,8 +3,7 @@ import React, { useEffect } from "react";
 import mapboxgl from "mapbox-gl";
 import MapboxDirections from "@mapbox/mapbox-gl-directions/dist/mapbox-gl-directions";
 
-mapboxgl.accessToken =
-  "pk.eyJ1Ijoic3llZGVuYW0iLCJhIjoiY2w2Nnlqc2NvM2Z5bTNjbXBydm9jbjJldyJ9.0a1MGXkwIH-i9gISU1KIUQ";
+mapboxgl.accessToken = process.env.REACT_APP_MAPBOX_TOKEN;
 const MapDirection = () => {
   useEffect(() => {
     const map = new mapboxgl.Map({
